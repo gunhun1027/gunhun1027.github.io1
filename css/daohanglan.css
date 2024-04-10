@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html>
-   <head>
-       <style type="text/css">
-        .top{
+.top{
     /* 设置宽度高度背景颜色 */
     height: auto; /*高度改为自动高度*/
     width:100%;
@@ -11,6 +7,8 @@
     position: fixed; /*固定在顶部*/
     top: 0;/*离顶部的距离为0*/
     margin-bottom: 5px;
+    left:50%;
+    transform:translateX(-50%);
 }
 .top ul{
     /* 清除ul标签的默认样式 */
@@ -65,34 +63,3 @@
 body{
     background:#eff3f5;
 }
-
-       </style>
-        <body>
-            <div class="top">
-                   <center> 
-                    <ul>
-                    <li><a href="../../index.html">首页</a></li>
-                    <li><a href="../../about.html">关于</a></li>
-                    <li><a href="#">一级菜单</a></li>
-                    <li><a href="#"><b>一级菜单</b></a></li>
-                    <li><a href="#">一级菜单</a></li>
-                    <li>
-                        <a href="../apps.html">软件</a>
-                        <ul>
-                            <li><a href="../windows.html">windows</a></li>
-                            <li><a href="../Android.html">安卓</a></li>
-                        </ul>
-                    </li>        
-                      </ul>
-                    </center>      
-            </div>
-        </body>
-    </head>
-    <head>
-        <title>这是一个网站</title>
-    </head>
-    <body>
-        <br /><br />
-        <h1 align="center">压缩软件Bandzip</h1>
-    </body>
-</html>
