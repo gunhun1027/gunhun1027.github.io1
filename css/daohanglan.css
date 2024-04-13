@@ -3,7 +3,7 @@
     height: auto; /*高度改为自动高度*/
     width:100%;
     margin-left: 0;
-    background:rgb(189, 181, 181);
+    background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
     position: fixed; /*固定在顶部*/
     top: 0;/*离顶部的距离为0*/
     margin-bottom: 5px;
@@ -31,16 +31,17 @@
 .top li a{
    /* 设置链接内容显示的格式*/
     display: block; /* 把链接显示为块元素可使整个链接区域可点击 */
-    color:white;
+    color:rgb(0, 0, 0);
     text-align: center;
-    padding: 3px;
+    padding: 2px;
     overflow: hidden;
     text-decoration: none; /* 去除下划线 */
     
 }
 .top li a:hover{
     /* 鼠标选中时背景变为黑色 */
-    background-color: #111;
+    /*background-color: #138fd6; */
+    background-color: #f9f7f7;
 }
 .top ul li ul{
     /* 设置二级菜单 */
