@@ -1,0 +1,5 @@
+使用bash
+git init 初始化本地仓库 （只需第一次使用）
+git add 1.html  1.html为文件（如需上传全部文件文件名称为 .）
+git commit -m "首页"  引号里的为备注
+git remote add origin 仓库ssh地址

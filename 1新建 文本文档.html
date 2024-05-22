@@ -1,111 +1,390 @@
 <html>
-   <head>
-       <style type="text/css">
-        .top{
-    /* 设置宽度高度背景颜色 */
-    height: auto; /*高度改为自动高度*/
-    width:100%;
-    margin-left: 0;
-    background:rgb(189, 181, 181);
-    position: fixed; /*固定在顶部*/
-    top: 0;/*离顶部的距离为0*/
-    margin-bottom: 5px;
-}
-.top ul{
-    /* 清除ul标签的默认样式 */
-    width: auto;/*宽度也改为自动*/
-    list-style-type: none;
-    white-space:nowrap;
-    overflow: hidden;
-    margin-left: 5%;
-    /* margin-top: 0;          */
-    padding: 0;
 
-}
-.top li {
-    float:left; /* 使li内容横向浮动，即横向排列  */
-    margin-right:2%;  /* 两个li之间的距离*/
-    position: relative;
-    overflow: hidden;
-}
+<head>
+    <style type="text/css">
+        .top {
+            /* 设置宽度高度背景颜色 */
+            height: auto;
+            /*高度改为自动高度*/
+            width: 100%;
+            margin-left: 0;
+            background: rgb(189, 181, 181);
+            position: fixed;
+            /*固定在顶部*/
+            top: 0;
+            /*离顶部的距离为0*/
+            margin-bottom: 5px;
+        }
 
-.top li a{
-   /* 设置链接内容显示的格式*/
-    display: block; /* 把链接显示为块元素可使整个链接区域可点击 */
-    color:white;
-    text-align: center;
-    padding: 3px;
-    overflow: hidden;
-    text-decoration: none; /* 去除下划线 */
-    
-}
-.top li a:hover{
-    /* 鼠标选中时背景变为黑色 */
-    background-color: #111;
-}
-.top ul li ul{
-    /* 设置二级菜单 */
-    margin-left: -0.2px;
-    background:rgb(189, 181, 181);
-    position: relative;
-    display: none; /* 默认隐藏二级菜单的内容 */
+        .top ul {
+            /* 清除ul标签的默认样式 */
+            width: auto;
+            /*宽度也改为自动*/
+            list-style-type: none;
+            white-space: nowrap;
+            overflow: hidden;
+            margin-left: 5%;
+            /* margin-top: 0;          */
+            padding: 0;
 
-}
-.top ul li ul li{
-    /* 二级菜单li内容的显示 */
-    
-    float:none;
-    text-align: center;
-}
-.top ul li:hover ul{
-    /* 鼠标选中二级菜单内容时 */
-    display: block;
-}
-body{
-    background:#eff3f5;
-}
+        }
 
-       </style>
-        <body>
-            <div class="top">
-                   <center> 
+        .top li {
+            float: left;
+            /* 使li内容横向浮动，即横向排列  */
+            margin-right: 2%;
+            /* 两个li之间的距离*/
+            position: relative;
+            overflow: hidden;
+        }
+
+        .top li a {
+            /* 设置链接内容显示的格式*/
+            display: block;
+            /* 把链接显示为块元素可使整个链接区域可点击 */
+            color: white;
+            text-align: center;
+            padding: 3px;
+            overflow: hidden;
+            text-decoration: none;
+            /* 去除下划线 */
+
+        }
+
+        .top li a:hover {
+            /* 鼠标选中时背景变为黑色 */
+            background-color: #111;
+        }
+
+        .top ul li ul {
+            /* 设置二级菜单 */
+            margin-left: -0.2px;
+            background: rgb(189, 181, 181);
+            position: relative;
+            display: none;
+            /* 默认隐藏二级菜单的内容 */
+
+        }
+
+        .top ul li ul li {
+            /* 二级菜单li内容的显示 */
+
+            float: none;
+            text-align: center;
+        }
+
+        .top ul li:hover ul {
+            /* 鼠标选中二级菜单内容时 */
+            display: block;
+        }
+
+        body {
+            background: #eff3f5;
+        }
+    </style>
+
+<body>
+    <div class="top">
+        <center>
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="about.html">关于</a></li>
+                <li><a href="#">一级菜单</a></li>
+                <li><a href="#"><b>一级菜单</b></a></li>
+                <li><a href="#">一级菜单</a></li>
+                <li>
+                    <a href="#">一级菜单</a>
                     <ul>
-                    <li><a href="#">首页</a></li>
-                    <li><a href="about.html">关于</a></li>
-                    <li><a href="#">一级菜单</a></li>
-                    <li><a href="#"><b>一级菜单</b></a></li>
-                    <li><a href="#">一级菜单</a></li>
-                    <li>
-                        <a href="#">一级菜单</a>
-                        <ul>
-                            <li><a href="#">二级菜单</a></li>
-                            <li><a href="#">二级菜单</a></li>
-                        </ul>
-                    </li>        
-                      </ul>
-                    </center>      
+                        <li><a href="#">二级菜单</a></li>
+                        <li><a href="#">二级菜单</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </center>
+    </div>
+</body>
+</head>
+
+<head>
+    <title>这是一个网站</title>
+</head>
+
+<body inject_video_svd="true" style="overflow: auto;">
+    <div id="article-web-app"></div>
+    <div id="app">
+        <div class="article-detail">
+            <div class="article-breadcrumb"><a href="//www.bilibili.com/read/home?from=articleDetail" target="_self"
+                    class="breadcrumb-name">专栏</a><span class="slash">/</span><!----><!----><!----><!----><span
+                    class="breadcrumb-name breadcrumb-title">【光遇】先祖/光翼 全收集「晨岛」（新）---附兑换图、一图通</span></div>
+            <div class="article-container">
+                <div class="article-container__content">
+                    <div class="title-container"><!---->
+                        <div class="article-read-panel" data-v-36aefa22="">
+                            <div class="article-read-info" data-v-36aefa22=""><!----><span class="publish-text"
+                                    data-v-36aefa22="">2020年09月05日 01:24</span><span data-v-36aefa22="">6861浏览</span> ·
+                                <span data-v-36aefa22="">81喜欢</span> ·
+                                <span data-v-36aefa22="">10评论</span><!---->
+                            </div><!---->
+                        </div>
+                    </div>
+                    <div id="article-content" class="article-content">
+                        <div id="read-article-holder" class="normal-article-holder read-article-holder">
+                            <p><br></p>
+                            <figure class="img-box loaded" contenteditable="false"><img
+                                    data-src="//i0.hdslb.com/bfs/article/4adb9255ada5b97061e610b682b8636764fe50ed.png"
+                                    class="cut-off-5"
+                                    src="//i0.hdslb.com/bfs/article/4adb9255ada5b97061e610b682b8636764fe50ed.png">
+                            </figure>
+                            <p style="text-align: min-width" align="center">晨岛共有3个先祖，5个光翼_<br></p>
+                            <figure class="img-box loaded" contenteditable="false"
+                                style="min-width: 628px; min-height: 356px;" align="center">
+                                <img data-src="https://i0.hdslb.com/bfs/article/98ca7981b804fd4d92f1c8b670a40d5478362ab4.png"
+                                    width="682" height="682" data-size="201850" class="min-width-img" data-index="0"
+                                    data-type="preview" style="width: 628px; height: 628px;"
+                                    src="https://i0.hdslb.com/bfs/article/98ca7981b804fd4d92f1c8b670a40d5478362ab4.png">
+                                <figcaption class="caption" contenteditable="false">先祖和光翼的排序可作获取的顺序参考（萌新）</figcaption>
+                            </figure>
+                            <p data-immersive-translate-walked="39adea82-fdd1-4790-8ae6-cee4e82ca43c">
+                                刚进图的时候可以看到一座小山，山顶②光翼，洞的另一边有①光翼</p>
+                            <figure class="img-box loaded" contenteditable="false"
+                                style="min-width: 628px; min-height: 356px;">
+                                <div class="n-img-mask" style="width: 100%;height: 356px;">
+                                    <i class="iconfont icon--default-cover default-cover"></i>
+                                    <div class="n-img-reload" data-type="reload"></div>
+                                </div>
+                                <img data-src="https://i0.hdslb.com/bfs/article/3befccd334ce3b782a13f2d9436a4ef64ec546b3.png@1256w_712h_!web-article-pic.avif"
+                                    width="2048" height="1158" data-size="1934379" class="normal-img" data-index="1"
+                                    data-type="preview" style="width: 628px; height: 356px;"
+                                    src="https://i0.hdslb.com/bfs/article/3befccd334ce3b782a13f2d9436a4ef64ec546b3.png@1256w_712h_!web-article-pic.avif">
+                                <figcaption class="caption" contenteditable="false"></figcaption>
+                            </figure>
+                            <p>穿过山洞，就看到①光翼</p>
+                            <figure class="img-box loaded" contenteditable="false"
+                                style="min-width: 628px; min-height: 359px;">
+                                <div class="n-img-mask" style="width: 100%;height: 359px;">
+                                    <i class="iconfont icon--default-cover default-cover"></i>
+                                    <div class="n-img-reload" data-type="reload"></div>
+                                </div>
+                                <img data-src="https://i0.hdslb.com/bfs/article/deb8e0efa6c7540bc02079fa900452463171ded4.png@1256w_718h_!web-article-pic.avif"
+                                    width="2048" height="1168" data-size="1895727" class="normal-img" data-index="2"
+                                    data-type="preview" style="width: 628px; height: 359px;"
+                                    src="https://i0.hdslb.com/bfs/article/deb8e0efa6c7540bc02079fa900452463171ded4.png@1256w_718h_!web-article-pic.avif">
+                                <figcaption class="caption" contenteditable="false"></figcaption>
+                            </figure>
+                            <p>②光翼</p>
+                            <figure class="img-box loaded" contenteditable="false"
+                                style="min-width: 628px; min-height: 356px;">
+                                <div class="n-img-mask" style="width: 100%;height: 356px;">
+                                    <i class="iconfont icon--default-cover default-cover"></i>
+                                    <div class="n-img-reload" data-type="reload"></div>
+                                </div>
+                                <img data-src="https://i0.hdslb.com/bfs/article/e52e300181b6f704c32c78485af5fd5232bffad6.png@1256w_712h_!web-article-pic.avif"
+                                    width="2048" height="1158" data-size="3489715" class="normal-img" data-index="3"
+                                    data-type="preview" style="width: 628px; height: 356px;"
+                                    src="https://i0.hdslb.com/bfs/article/e52e300181b6f704c32c78485af5fd5232bffad6.png@1256w_712h_!web-article-pic.avif">
+                                <figcaption class="caption" contenteditable="false">技巧：贴着墙乱蹦就上去了，不然就飞</figcaption>
+                            </figure>
+                            <p>往前走，可以看到①②先祖，③④光翼的大致方位</p>
+                            <figure class="img-box loaded" contenteditable="false"
+                                style="min-width: 628px; min-height: 356px;">
+                                <div class="n-img-mask" style="width: 100%;height: 356px;">
+                                    <i class="iconfont icon--default-cover default-cover"></i>
+                                    <div class="n-img-reload" data-type="reload"></div>
+                                </div>
+                                <img data-src="https://i0.hdslb.com/bfs/article/dd83b68d81f161f4b459cdfddc1f58ba61dfb122.png@1256w_712h_!web-article-pic.avif"
+                                    width="2048" height="1158" data-size="1656196" class="normal-img" data-index="4"
+                                    data-type="preview" style="width: 628px; height: 356px;"
+                                    src="https://i0.hdslb.com/bfs/article/dd83b68d81f161f4b459cdfddc1f58ba61dfb122.png@1256w_712h_!web-article-pic.avif">
+                                <figcaption class="caption" contenteditable="false"></figcaption>
+                            </figure>
+                            <p>①先祖<br></p>
+                            <figure class="img-box loaded" contenteditable="false"
+                                style="min-width: 628px; min-height: 356px;">
+                                <div class="n-img-mask" style="width: 100%;height: 356px;">
+                                    <i class="iconfont icon--default-cover default-cover"></i>
+                                    <div class="n-img-reload" data-type="reload"></div>
+                                </div>
+                                <img data-src="https://i0.hdslb.com/bfs/article/e7906749706d90f64d4edd03b52c58533de5a9d1.png@1256w_712h_!web-article-pic.avif"
+                                    width="2048" height="1158" data-size="3800049" class="normal-img" data-index="5"
+                                    data-type="preview" style="width: 628px; height: 356px;"
+                                    src="https://i0.hdslb.com/bfs/article/e7906749706d90f64d4edd03b52c58533de5a9d1.png@1256w_712h_!web-article-pic.avif">
+                                <figcaption class="caption" contenteditable="false"></figcaption>
+                            </figure>
+                            <p>②先祖</p>
+                            <figure class="img-box loaded" contenteditable="false"
+                                style="min-width: 628px; min-height: 356px;">
+                                <div class="n-img-mask" style="width: 100%;height: 356px;">
+                                    <i class="iconfont icon--default-cover default-cover"></i>
+                                    <div class="n-img-reload" data-type="reload"></div>
+                                </div>
+                                <img data-src="https://i0.hdslb.com/bfs/article/e104dcd72b3b827067eeaeb47a8011c2466c4e56.png@1256w_712h_!web-article-pic.avif"
+                                    width="2048" height="1158" data-size="2501261" class="normal-img" data-index="6"
+                                    data-type="preview" style="width: 628px; height: 356px;"
+                                    src="https://i0.hdslb.com/bfs/article/e104dcd72b3b827067eeaeb47a8011c2466c4e56.png@1256w_712h_!web-article-pic.avif">
+                                <figcaption class="caption" contenteditable="false"></figcaption>
+                            </figure>
+                            <p>③光翼在一个有光门的洞里，需要1个晨岛先祖解锁</p>
+                            <figure class="img-box loaded" contenteditable="false"
+                                style="min-width: 628px; min-height: 352px;">
+                                <div class="n-img-mask" style="width: 100%;height: 352px;">
+                                    <i class="iconfont icon--default-cover default-cover"></i>
+                                    <div class="n-img-reload" data-type="reload"></div>
+                                </div>
+                                <img data-src="https://i0.hdslb.com/bfs/article/8fa9db356c7152858e388fd2795a9cc74e1d5042.png@1256w_704h_!web-article-pic.avif"
+                                    width="2048" height="1147" data-size="2544667" class="normal-img" data-index="7"
+                                    data-type="preview" style="width: 628px; height: 352px;"
+                                    src="https://i0.hdslb.com/bfs/article/8fa9db356c7152858e388fd2795a9cc74e1d5042.png@1256w_704h_!web-article-pic.avif">
+                                <figcaption class="caption" contenteditable="false"></figcaption>
+                            </figure>
+                            <p>④光翼所在的石梯也有需要1个晨岛先祖解锁的光门</p>
+                            <p><br></p>
+                            <figure class="img-box loaded" contenteditable="false"
+                                style="min-width: 628px; min-height: 349px;">
+                                <div class="n-img-mask" style="width: 100%;height: 349px;">
+                                    <i class="iconfont icon--default-cover default-cover"></i>
+                                    <div class="n-img-reload" data-type="reload"></div>
+                                </div>
+                                <img data-src="https://i0.hdslb.com/bfs/article/ffbe1930acfb918a1ecb918cb543ca32bfd9ab5b.png@1256w_698h_!web-article-pic.avif"
+                                    width="2048" height="1137" data-size="2009755" class="normal-img" data-index="8"
+                                    data-type="preview" style="width: 628px; height: 349px;"
+                                    src="https://i0.hdslb.com/bfs/article/ffbe1930acfb918a1ecb918cb543ca32bfd9ab5b.png@1256w_698h_!web-article-pic.avif">
+                                <figcaption class="caption" contenteditable="false"></figcaption>
+                            </figure>
+                            <figure class="img-box loaded" contenteditable="false"
+                                style="min-width: 628px; min-height: 356px;">
+                                <div class="n-img-mask" style="width: 100%;height: 356px;">
+                                    <i class="iconfont icon--default-cover default-cover"></i>
+                                    <div class="n-img-reload" data-type="reload"></div>
+                                </div>
+                                <img data-src="https://i0.hdslb.com/bfs/article/38ef54ef46ad2c4537af68d31bf90300536fedd6.png@1256w_712h_!web-article-pic.avif"
+                                    width="2048" height="1158" data-size="3284580" class="normal-img" data-index="9"
+                                    data-type="preview" style="width: 628px; height: 356px;"
+                                    src="https://i0.hdslb.com/bfs/article/38ef54ef46ad2c4537af68d31bf90300536fedd6.png@1256w_712h_!web-article-pic.avif">
+                                <figcaption class="caption" contenteditable="false"></figcaption>
+                            </figure>
+                            <p>飞上神庙，神庙左下角洞里是③先祖，⑤光遇在神庙右边的云海隧道对面</p>
+                            <figure class="img-box loaded" contenteditable="false"
+                                style="min-width: 628px; min-height: 356px;">
+                                <div class="n-img-mask" style="width: 100%;height: 356px;">
+                                    <i class="iconfont icon--default-cover default-cover"></i>
+                                    <div class="n-img-reload" data-type="reload"></div>
+                                </div>
+                                <img data-src="https://i0.hdslb.com/bfs/article/9cb8b4f9118dd53662c94c885867692325faa610.png@1256w_712h_!web-article-pic.avif"
+                                    width="2048" height="1158" data-size="3263661" class="normal-img" data-index="10"
+                                    data-type="preview" style="width: 628px; height: 356px;"
+                                    src="https://i0.hdslb.com/bfs/article/9cb8b4f9118dd53662c94c885867692325faa610.png@1256w_712h_!web-article-pic.avif">
+                                <figcaption class="caption" contenteditable="false"></figcaption>
+                            </figure>
+                            <p>③先祖所在的洞有需要2个晨岛先祖解锁的光门</p>
+                            <figure class="img-box loaded" contenteditable="false"
+                                style="min-width: 628px; min-height: 352px;">
+                                <div class="n-img-mask" style="width: 100%;height: 352px;">
+                                    <i class="iconfont icon--default-cover default-cover"></i>
+                                    <div class="n-img-reload" data-type="reload"></div>
+                                </div>
+                                <img data-src="https://i0.hdslb.com/bfs/article/885c74162599aab43736d231949036a0539bf31a.png@1256w_704h_!web-article-pic.avif"
+                                    width="2048" height="1147" data-size="2882475" class="normal-img" data-index="11"
+                                    data-type="preview" style="width: 628px; height: 352px;"
+                                    src="https://i0.hdslb.com/bfs/article/885c74162599aab43736d231949036a0539bf31a.png@1256w_704h_!web-article-pic.avif">
+                                <figcaption class="caption" contenteditable="false"></figcaption>
+                            </figure>
+                            <figure class="img-box loaded" contenteditable="false"
+                                style="min-width: 628px; min-height: 356px;">
+                                <div class="n-img-mask" style="width: 100%;height: 356px;">
+                                    <i class="iconfont icon--default-cover default-cover"></i>
+                                    <div class="n-img-reload" data-type="reload"></div>
+                                </div>
+                                <img data-src="https://i0.hdslb.com/bfs/article/ad5e0a5b5c77d5750ed4e742cc6d7b687fa8cce9.png@1256w_712h_!web-article-pic.avif"
+                                    width="2048" height="1158" data-size="3989819" class="normal-img" data-index="12"
+                                    data-type="preview" style="width: 628px; height: 356px;"
+                                    src="https://i0.hdslb.com/bfs/article/ad5e0a5b5c77d5750ed4e742cc6d7b687fa8cce9.png@1256w_712h_!web-article-pic.avif">
+                                <figcaption class="caption" contenteditable="false"></figcaption>
+                            </figure>
+                            <p>穿过云海隧道，看见一座小山，有扇需要两人协作开启的石门，操作一系列机关后即可登上半山腰，⑤光翼在半山腰处</p>
+                            <figure class="img-box loaded" contenteditable="false"
+                                style="min-width: 628px; min-height: 356px;">
+                                <div class="n-img-mask" style="width: 100%;height: 356px;">
+                                    <i class="iconfont icon--default-cover default-cover"></i>
+                                    <div class="n-img-reload" data-type="reload"></div>
+                                </div>
+                                <img data-src="https://i0.hdslb.com/bfs/article/5145583940497e27722b7fda31909c25ecc36d53.png@1256w_712h_!web-article-pic.avif"
+                                    width="2048" height="1158" data-size="1428056" class="normal-img" data-index="13"
+                                    data-type="preview" style="width: 628px; height: 356px;"
+                                    src="https://i0.hdslb.com/bfs/article/5145583940497e27722b7fda31909c25ecc36d53.png@1256w_712h_!web-article-pic.avif">
+                                <figcaption class="caption" contenteditable="false"></figcaption>
+                            </figure>
+                            <figure class="img-box loaded is-reload" contenteditable="false"
+                                style="min-width: 405px; min-height: 226px;">
+                                <div class="n-img-mask" style="width: 100%;height: 226px;">
+                                    <div class="d-f ali-c jus-c gif-preload-dots dis-evt">
+                                        <div class="black-tv-icon-bg">
+                                            <span class="dot dot-1"></span>
+                                            <span class="dot dot-2"></span>
+                                            <span class="dot dot-3"></span>
+                                        </div>
+                                    </div>
+                                    <div class="d-f ali-c jus-c gif-preload-info" data-type="reload">
+                                        <span class="black-tv-icon-bg dis-evt">GIF</span>
+                                    </div>
+                                </div>
+                                <img data-src="https://i0.hdslb.com/bfs/article/969894ce3554552fe6dfdb7ade221a15a0dd5e5e.gif@!web-article-pic.avif"
+                                    width="405" height="226" data-size="3073273"
+                                    src="https://i0.hdslb.com/bfs/article/969894ce3554552fe6dfdb7ade221a15a0dd5e5e.gif@!web-article-pic.avif@1s.webp"
+                                    class="normal-img normal-gif" data-index="14" data-type="preview"
+                                    style="width: 405px; height: 226px;">
+                                <figcaption class="caption" contenteditable="false">当然也可以直接飞上去</figcaption>
+                            </figure>
+                            <p>⑤光翼就在洞里<br></p>
+                            <figure class="img-box loaded" contenteditable="false"
+                                style="min-width: 628px; min-height: 356px;">
+                                <div class="n-img-mask" style="width: 100%;height: 356px;">
+                                    <i class="iconfont icon--default-cover default-cover"></i>
+                                    <div class="n-img-reload" data-type="reload"></div>
+                                </div>
+                                <img data-src="https://i0.hdslb.com/bfs/article/965e2cb243fb17608591f9858bc371cd40ce919f.png@1256w_712h_!web-article-pic.avif"
+                                    width="2048" height="1158" data-size="3724752" class="normal-img" data-index="15"
+                                    data-type="preview" style="width: 628px; height: 356px;"
+                                    src="https://i0.hdslb.com/bfs/article/965e2cb243fb17608591f9858bc371cd40ce919f.png@1256w_712h_!web-article-pic.avif">
+                                <figcaption class="caption" contenteditable="false"></figcaption>
+                            </figure>
+                            <p>摸着右边的墙走</p>
+                            <figure class="img-box loaded" contenteditable="false"
+                                style="min-width: 628px; min-height: 356px;">
+                                <div class="n-img-mask" style="width: 100%;height: 356px;">
+                                    <i class="iconfont icon--default-cover default-cover"></i>
+                                    <div class="n-img-reload" data-type="reload"></div>
+                                </div>
+                                <img data-src="https://i0.hdslb.com/bfs/article/34732e33d85e0fbd0332a9ddc6495d7c41bc7509.png@1256w_712h_!web-article-pic.avif"
+                                    width="2048" height="1158" data-size="3117454" class="normal-img" data-index="16"
+                                    data-type="preview" style="width: 628px; height: 356px;"
+                                    src="https://i0.hdslb.com/bfs/article/34732e33d85e0fbd0332a9ddc6495d7c41bc7509.png@1256w_712h_!web-article-pic.avif">
+                                <figcaption class="caption" contenteditable="false"></figcaption>
+                            </figure>
+                            <h1>先祖兑换图</h1>
+                            <figure class="img-box loaded" contenteditable="false"
+                                style="min-width: 628px; min-height: 426px;">
+                                <div class="n-img-mask" style="width: 100%;height: 426px;">
+                                    <i class="iconfont icon--default-cover default-cover"></i>
+                                    <div class="n-img-reload" data-type="reload"></div>
+                                </div>
+                                <img data-src="https://i0.hdslb.com/bfs/article/f49b580c43007d45851d13034ef2a7ea80000a37.png@1256w_852h_!web-article-pic.avif"
+                                    width="645" height="437" data-size="384755" class="normal-img" data-index="17"
+                                    data-type="preview" style="width: 628px; height: 426px;"
+                                    src="https://i0.hdslb.com/bfs/article/f49b580c43007d45851d13034ef2a7ea80000a37.png@1256w_852h_!web-article-pic.avif">
+                                <figcaption class="caption" contenteditable="false">网上的资源</figcaption>
+                            </figure>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </body>
-    </head>
-    <head>
-        <title>这是一个网站</title>
-    </head>
-    <body inject_video_svd="true" style="margin: 0px; height: 100%;">
-        <br /><br /><img src="https://znk.mrkaiyang.top/_next/image?url=https%3A%2F%2Fwww.notion.so%2Fimage%2Fhttps%253A%252F%252Ffile.notion.so%252Ff%252Ff%252F9046d044-b643-4bd0-9065-f568c6991079%252Fc7262505-2fc0-45b0-9670-7fe171ac0a36%252F202402180624-3.png%253Fid%253D6e913de0-5a30-4e42-ba33-2aee38c33e54%2526table%253Dblock%2526spaceId%253D9046d044-b643-4bd0-9065-f568c6991079%2526expirationTimestamp%253D1708668000000%2526signature%253D0v6DkWfXDyfkJMkbnU5LNvuIbgSHtu1uxOTPNbBlc7o%3Ftable%3Dblock%26id%3D6e913de0-5a30-4e42-ba33-2aee38c33e54%26cache%3Dv2&amp;w=2048&amp;q=75" width="538" height="957">
-        
-        <img src="images/1.png"width="1280" height="720">
-        <h1>软件列表</h1>
-        <p>
-            我创建了一个节点<a href="https://www.bilibili.com" title="哔哩哔哩">bilibili</a>
-            的超链接
-        </p>
-        <p>
-            我创建了一个节点<a href="index.html" title="a">a</a>
-            的超链接
-        </p>
-        <p>
-            我创建了一个节点<a href="video/1.mp4" title="哔哩哔哩">bilibili</a>
-            的超链接
-        </p>
-    </body>
+            <div id="comment-wrapper" class="comment-wrapper"></div>
+            <div class="right-side-bar is-mini-page" data-v-0974dd01="">
+                <div class="to-top" data-v-0974dd01=""><i class="iconfont icon-top" data-v-0974dd01=""></i></div><!---->
+            </div>
+        </div>
+    </div>
+</body>
+</body>
+
 </html>
